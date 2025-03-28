@@ -1,0 +1,108 @@
+body {
+   background-color: rgb(250, 46, 230);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.vertical-nav {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #0a0a0a;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    flex wrap: wrap;
+}
+
+.vertical-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; /* Ensure the list items wrap */
+    justify-content: center;
+
+}
+
+.vertical-nav ul li {
+    margin: 5px 15px;
+}
+
+.vertical-nav ul li a {
+    color: rgb(245, 6, 233);
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+@media (max-width: 600px) {
+    .vertical-nav ul {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align the items */
+    }
+
+    .vertical-nav ul li {
+        margin: 10px 0; /* Add vertical spacing between items */
+    }
+.vertical-nav ul li a:hover {
+    background-color: #0a358b;
+}
+
+header {
+    background-color: #078ae8;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #000000;
+    margin: 50px auto;
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between text and image */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+header h1 span {
+    display: block;
+}
+
+header img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 20px; /* Optional: rounded corners for the image */
+}
+
+.text-box {
+    background-color: #2da6eb;
+    padding: 20px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.text-box img {
+    float: right;
+    margin-right: 10px;
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    border-radius: 20px; /* Optional: rounded corners for the image */
+}
+
+.text-box p {
+    margin: 0;
+}
